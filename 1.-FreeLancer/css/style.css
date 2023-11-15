@@ -4,6 +4,19 @@
     --primario: #ffc107;
     --secundario: #0097a7;
     --gris: #757575;
+    --texto_principal: 'Krub', sans-serif;
+
+    --color1: #f7f6fc;
+    --color2: #f0eff8;
+    --color3: #e4e1f3;
+    --color4: #cec8ea;
+    --color5: #b5a8dd;
+    --color6: #9985cd;
+    --color7: #876abe;
+    --color8: #7557aa;
+    --color9: #62488f;
+    --color10:#523d75;
+    --color11:#34264f;
 }
 
 html{
@@ -12,16 +25,51 @@ html{
 
 body{
     font-size: 16px; /*1rem = 10px*/
+    font-family: var(--texto_principal);
+
 }
 
-h1{
+.titulo{
     text-align: center;
     font-size: 3.8rem;
+    font-weight: 700;
 }
 
-span{
-    color: aqua;
+.titulo .titulo_span{
     font-size: 2rem;
 }
 
+.contenedor{
+    width: 120rem;
+    margin: 0 auto;
+}
 
+.nav-bg{
+    background-color: var(--color8);
+}
+
+.nav-principal{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-principal a{
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 1rem;
+
+}
+
+.nav-principal a:hover{
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+
+@media (min-width: 768px) {
+  .nav-principal {
+    
+  }
+}
