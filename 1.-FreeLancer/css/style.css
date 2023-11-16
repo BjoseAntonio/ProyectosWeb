@@ -40,7 +40,7 @@ body{
 }
 
 .contenedor{
-    width: 120rem;
+    max-width: 120rem;
     margin: 0 auto;
 }
 
@@ -50,8 +50,16 @@ body{
 
 .nav-principal{
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
+@media (min-width: 768px) {
+    .nav-principal {
+        flex-direction: row;
+        
+    }
+  }
+  
 
 .nav-principal a{
     color: var(--blanco);
@@ -59,6 +67,7 @@ body{
     font-size: 2rem;
     font-weight: 700;
     padding: 1rem;
+    align-items: center;
 
 }
 
@@ -68,8 +77,3 @@ body{
 }
 
 
-@media (min-width: 768px) {
-  .nav-principal {
-     
-  }
-}
