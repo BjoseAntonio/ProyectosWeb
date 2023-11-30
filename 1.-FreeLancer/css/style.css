@@ -98,6 +98,15 @@ h1,h2,h3{
         justify-content: space-between;
     }
   }
+
+  .sombra{
+    -webkit-box-shadow: 5px 6px 12px 5px rgba(102,99,102,1);
+    -moz-box-shadow: 5px 6px 12px 5px rgba(102,99,102,1);
+    box-shadow: 5px 6px 12px 5px rgba(102,99,102,1);
+    background-color: var(--blanco);
+    padding: 2rem;
+    border-radius: 1rem;
+}
   
 
 .nav-principal a{
@@ -123,6 +132,7 @@ h1,h2,h3{
     background-size: cover;
     height: 410px;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .contenido-hero{
@@ -149,10 +159,24 @@ h1,h2,h3{
 
 }
 
-.sombra{
-    -webkit-box-shadow: 5px 6px 12px 5px rgba(102,99,102,1);
-    -moz-box-shadow: 5px 6px 12px 5px rgba(102,99,102,1);
-    box-shadow: 5px 6px 12px 5px rgba(102,99,102,1);
+.servicios{
+    display: grid;
+    background-color: #0097a7;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+
 }
+
+.servicio{
+    padding-left: 1rem;
+    
+}
+
+.servicio__icono{
+    background-color: var(--color6);
+    width: 80px;
+}
+
+
 
 
