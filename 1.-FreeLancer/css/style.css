@@ -159,12 +159,14 @@ h1,h2,h3{
 
 }
 
-.servicios{
-    display: grid;
-    background-color: #0097a7;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-
+@media (min-width: 768px) {
+    .servicios{
+        display: grid;
+        background-color: #0097a7;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    
+    }
 }
 
 .servicio{
