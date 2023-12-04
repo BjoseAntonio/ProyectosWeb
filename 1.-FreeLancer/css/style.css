@@ -195,6 +195,15 @@ h1,h2,h3{
     align-items: center;
 }
 
+.formulario{
+    background-color: var(--color8);
+    width: min(60rem, 100%);/*Utilizar el valor mas pequeño*/
+}
+
+.formulario fieldset{
+    border: none;
+}
+
 
 
 
