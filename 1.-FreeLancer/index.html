@@ -105,39 +105,39 @@
     
             <form class="formulario">
                 <fieldset>
-                    <legend>Contactános llenando todo los campos</legend>
-                    <div>
-                        <label >Nombre:</label>
-                        <input type="text" placeholder="Tu nombre">
+                    <legend class="legend">Contactános llenando todo los campos</legend>
+                    <div class="contenedor-campos">
+                        <div class="campo">
+                            <label >Nombre:</label>
+                            <input type="text" placeholder="Tu nombre" class="input-text">
+                        </div>
+        
+                        <div class="campo">
+                            <label >Teléfono:</label>
+                            <input type="number" placeholder="Tu Teléfono" class="input-text">
+                        </div>
+        
+                        <div class="campo">
+                            <label >Correo:</label>
+                            <input type="email" placeholder="Tu email" class="input-text">
+                        </div>
+        
+                        <div class="campo">
+                            <label for="">Mensaje:</label>
+                            <textarea class="input-text "></textarea>
+                        </div>
                     </div>
-    
-                    <div>
-                        <label >Teléfono</label>
-                        <input type="number" placeholder="Tu Teléfono">
+                    <div class="alinear-derecha flex">
+                        <input type="submit" value="Enviar"
+                        class="boton  w-sm-100">
                     </div>
-    
-                    <div>
-                        <label >Correo</label>
-                        <input type="email" placeholder="Tu email">
-                    </div>
-    
-                    <div>
-                        <label for="">Mensaje</label>
-                        <textarea></textarea>
-                    </div>
-    
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-    
-    
                 </fieldset>
             </form>
         </section>
     </main>
 
 
-    <footer>
+    <footer class="footer">
         <p>Todo los derechos reservados. José Freelancer</p>
     </footer>
 </body>
