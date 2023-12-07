@@ -1,0 +1,59 @@
+:root{
+    --primario: ;
+    --primarioOscurio: ;
+    --secundario: ;
+    --secundarioOscuro: ;
+    --blanco: #fff;
+    --negro: #000;
+
+    --color1: #f8f6ed;
+    --color2: #f0ecd7;
+    --color3: #e2dcb4;
+    --color4: #cfc787;
+    --color5: #bab261;
+    --color6: #9f9843;
+    --color7: ;
+    --color8: #615f2a;
+    --color9: #4e4c26;
+    --color10: #434224;
+    --color11: #24240f;
+
+    --fuentePrincipal: 'Krub', sans-serif;
+    --fuenteSecundario:  'Staatliches', sans-serif;
+}
+
+html{
+    box-sizing:  border-box;
+    font-size: 62.5%; /*1rem =  10px*/
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+/* Globales */
+
+body{
+    background-color: var(--color6);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--color1);
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
