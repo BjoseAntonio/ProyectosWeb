@@ -17,9 +17,10 @@
     --color9: #4e4c26;
     --color10: #434224;
     --color11: #24240f;
+    --colorNav-hover: #9ef165;
 
-    --fuentePrincipal: 'Krub', sans-serif;
-    --fuenteSecundario:  'Staatliches', sans-serif;
+    --fuenteSecundario: 'Krub', sans-serif;
+    --fuentePrincipal:  'Staatliches', sans-serif;
 }
 
 html{
@@ -50,10 +51,58 @@ a{
 }
 
 img{
-    width: 100%;
+    max-width: 100%;
 }
 
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
+}
+
+h1, h2, h3{
+    text-align: center;
+    color: var(--color11);
+    font-family: var(--fuentePrincipal);
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+/* Header  */
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+  margin: 3rem 0;
+}
+
+.nav{
+    background-color: var(--color8);
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.nav__enlace{
+    color: var(--color1);
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+
+}
+
+.nav__enlace--activo,
+.nav__enlace:hover{
+    color: var(--colorNav-hover);
 }
