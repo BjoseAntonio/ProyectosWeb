@@ -222,9 +222,7 @@ h3{
 }
 
 /*Nosotros Compras*/
-.comprar{
-    
-}
+
 
 .bloques{
  display: grid;
@@ -260,14 +258,6 @@ h3{
     grid-template-columns: repeat(2, 1fr) ;
     gap: 2rem;
   }
-}
-
-.camisa__imagen{
-
-}
-
-.camisa__contenido{
-
 }
 
 .formulario{
