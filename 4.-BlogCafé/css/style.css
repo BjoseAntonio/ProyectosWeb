@@ -1,8 +1,9 @@
 :root{
-    --color-primario: ;
-    --color-Secundario: ;
-    --letra-color_1: ;
-    --letra-color_2: ;
+    --color-primario: #fde58a;
+    --color-Secundario: #923f0e;
+    --color-tercer: #f49d0c;
+    --blanco: #fffbeb;
+    --negro: #181717;
     --estilo-letra_1: 'Open Sans', sans-serif;
     --estilo-letra_2: 'PT Sans', sans-serif;
 }
@@ -17,6 +18,43 @@ html{
 
 body{
     font-family: var(--estilo-letra_1);
+    background-color: var(--color-Secundario);
+    color: var(--blanco);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+}
+
+h3{
+    font-size: 2.8rem;
+}
+
+p{
+    font-size: 2rem;
+}
+
+.contenido{
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.header--img{
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
 }
 
 
