@@ -1,43 +1,41 @@
-html {
+html{
     box-sizing: border-box;
     font-size: 62.5%;
 }
 
-*,
-*:before,
-*:after {
+*,*:before,*:after {
     box-sizing: inherit;
 }
 
-body {
-    font-family: 'Raleway', sans-serif;
+body{
+    font-family:'Raleway', sans-serif;
     font-size: 1.6rem;
     line-height: 2;
 }
 
-img {
+img{
     max-width: 100%;
 }
 
-h1 {
+h1{
     font-size: 4rem;
 }
 
-h2 {
-    font-size: 3.2rem;
+h2{
+    font-size: 3.5rem;
 }
 
-p {
+p{
     font-size: 2rem;
 }
 
-.contenedor {
+.contenedor{
     max-width: 1200px;
     width: 95%;
     margin: 0 auto;
 }
 
-.entrada-blog a {
+.entrada-blog a{
     display: inline-block;
     background-color: #2196F3;
     color: white;
@@ -47,20 +45,19 @@ p {
     text-transform: uppercase;
 }
 
-
-/** CODIGO AQUI **/
-@media (min-width:768px) {
-    .layout-shifter {
+/**CODIGO AQUI**/
+@media (min-width: 768px) {
+    .layout-shifter{
         display: grid;
         grid-template-areas: "contenido"
                              "inferior";
     }
 
-    .sidebar {
+    .sidebar{
         grid-area: inferior;
     }
 
-    .contenido-principal {
+    .contenido-principal{
         grid-area: contenido;
         display: grid;
         grid-template-areas: "entrada1 entrada2";
@@ -70,19 +67,22 @@ p {
 }
 
 @media (min-width: 992px) {
-    .layout-shifter {
+    .layout-shifter{
         grid-template-areas: "contenido sidebar";
-        column-gap: 2rem;
+        grid-template-columns: 3fr 1fr;
+        column-gap: 3rem;
     }
 
-    .sidebar {
+    .sidebar{
         grid-area: sidebar;
     }
-    .contenido-principal {
-        grid-area: contenido;
 
+    .contenido-principal{
+        grid-area: contenido;
         grid-template-areas: "entrada1"
-                             "entrada2";
+                            "entrada2";
         grid-template-columns: unset;
     }
+    
+
 }
