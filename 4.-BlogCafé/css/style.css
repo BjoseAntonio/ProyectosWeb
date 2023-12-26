@@ -1,0 +1,22 @@
+:root{
+    --color-primario: ;
+    --color-Secundario: ;
+    --letra-color_1: ;
+    --letra-color_2: ;
+    --estilo-letra_1: 'Open Sans', sans-serif;
+    --estilo-letra_2: 'PT Sans', sans-serif;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: var(--estilo-letra_1);
+}
+
+
