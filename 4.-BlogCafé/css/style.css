@@ -1,6 +1,7 @@
 :root{
     --color-primario: #fde58a;
     --color-Secundario: #923f0e;
+    --color-Secundario2: #8f4c25;
     --color-tercer: #f49d0c;
     --blanco: #fffbeb;
     --negro: #181717;
@@ -128,6 +129,20 @@ img{
    color: var(--blanco);
 }
 
+.contenido-principal{
+    background-color: var(--color-Secundario2);
+    margin: 2rem;
+    border-radius: 2rem;
+    padding: 0 2rem;
+}
+
+@media (min-width: 768px) {
+    .contenido-principal{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        column-gap: 4rem;
+    }
+}
 
 
 
