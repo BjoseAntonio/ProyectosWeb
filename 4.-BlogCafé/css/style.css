@@ -19,8 +19,7 @@ html{
 
 body{
     font-family: var(--estilo-letra_1);
-    background-color: var(--color-Secundario);
-    color: var(--blanco);
+    color: var(--negro);
     font-size: 1.6rem;
     line-height: 2;
 }
@@ -50,6 +49,10 @@ h3{
 
 h4{
     font-size: 2.8rem;
+}
+
+h1, h2, h3, h4{
+    line-height: 1.2;
 }
 
 p{
@@ -130,7 +133,6 @@ img{
 }
 
 .contenido-principal{
-    background-color: var(--color-Secundario2);
     margin: 2rem;
     border-radius: 2rem;
     padding: 0 2rem;
@@ -146,7 +148,7 @@ img{
 
 /* Nuestro blog */
 .entrada{
-    border-bottom: 1px solid var(--negro);
+    border-bottom: 1px solid var(--blanco);
     margin-bottom: 2rem;
 }
 
@@ -183,11 +185,42 @@ img{
 }
 
 .boton--secundario{
-    
+    color: var(--blanco);
+    background-color: var(--negro);
 }
 
+.cursos{
+    list-style: none;/*Quitar las viñetas o los puntos de orden de una lista*/
+}
 
+.widget-curso{
+   border-bottom: 1px solid var(--blanco);
+   margin-bottom: 2rem;
+}
 
+.widget-curso:last-of-type{
+    margin-bottom: 0;
+   border: none;
+}
+
+.widget-curso__label{
+    font-family: var(--estilo-letra_2);
+    font-weight: bold;
+}
+
+.widget-curso__info{
+    font-weight: normal;
+}
+
+.widget-curso__label,
+.widget-curso__info{
+    font-size: 2rem;
+}
+
+.footer{
+    background-color: #181717;
+    padding: 3rem 0;
+}
 
 
 
