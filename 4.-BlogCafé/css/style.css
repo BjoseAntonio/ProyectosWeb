@@ -274,5 +274,30 @@ img{
     font-size: 2rem;
 }
 
+.contacto-bg{
+    background-image: url(../img/contacto.jpg);
+    height: 40rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
+.boton--primario--mod{
+    border: none;
+}
+
+.formulario{
+
+}
+
+.campo{
+
+}
+
+.campo__label{
+
+}
+
+.campo__field{
+
+}
 
