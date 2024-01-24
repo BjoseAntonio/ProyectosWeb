@@ -1,8 +1,7 @@
 :root{
-    --color-primario: #fde58a;
-    --color-Secundario: #923f0e;
-    --color-Secundario2: #8f4c25;
-    --color-Secundario3: #cebbb0;
+    --color-primario: #cebbb0;
+    --color-Secundario: #563c15;
+    --fondo: ##f9f9f9;
 
     --color-tercer: #f49d0c;
     --blanco: #fffbeb;
@@ -22,6 +21,7 @@ html{
 body{
     font-family: var(--estilo-letra_1);
     color: var(--negro);
+    background-color: var(--fondo);
     font-size: 1.6rem;
     line-height: 2;
 }
@@ -195,8 +195,8 @@ img{
 }
 
 .boton--secundario{
-    color: var(--negro);
-    background-color: var(--color-primario);
+    color: var(--blanco);
+    background-color: var(--negro);
 }
 
 .cursos{
