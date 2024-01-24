@@ -3,11 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nosotros-Blog café</title>
+
+    <!-- Preaload --><!--Elementos a cargar cuando sea visible por el usuario  -->
+    <link rel="preload" href="css/normalize.css" as="style">
     <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="preload" href="https://fonts.googleapis.com" crossorigin="crossorigin" as="font">
     <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin="crossorigin" as="font">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap" crossorigin="crossorigin" as="font">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="preload" href="css/style.css" as="style">
     <link rel="stylesheet" href="css/style.css">
 
 
@@ -39,7 +50,9 @@
 
         <div class="sobre-nosotros">
             <div class="sobre-nosotros__imagen">
-                <img src="img/nosotros.jpg" alt="imagen nosotros">
+                <picture>
+                    <img src="img/nosotros.jpg" alt="imagen nosotros">
+                </picture>
             </div>
             <div class="sobre-nosotros__texto">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam in voluptas omnis quibusdam beatae, recusandae dolor tempore distinctio minima nobis facere dicta. Ea magni libero et quae alias perspiciatis at!</p>
