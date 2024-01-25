@@ -257,6 +257,11 @@ img{
     }
 }
 
+.img__affogato{
+    max-width: 60%;
+    display: flex;
+    
+}
 
 /*Sobre Nosotros*/
 @media (min-width: 768px) {
