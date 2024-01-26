@@ -259,7 +259,8 @@ img{
 
 .img__affogato{
     max-width: 60%;
-    display: flex;
+    display: block;
+    margin: auto;
     
 }
 
