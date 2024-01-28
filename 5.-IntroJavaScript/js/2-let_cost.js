@@ -4,9 +4,10 @@ let compra = true
 
 compra = true
 
-let carrito 
+let carrito
 
 // Variables con const  ===> no se puede modificar su valor o reasignar y siempre la variable debe contar con un valor
 // const compra2  //sin valor la constante es un error 
 const compra2 = true
+// compra2 = true
 const seccion_compra = 'Tecnologia'
