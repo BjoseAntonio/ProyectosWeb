@@ -18,4 +18,4 @@ const nuevoProducto2 = Object.assign({}, producto, medida);
 
 console.log(producto);
 console.log(nuevoProducto);
-console.log(nuevoProducto2)
+console.log(nuevoProducto2);
