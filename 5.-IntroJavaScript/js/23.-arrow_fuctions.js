@@ -34,6 +34,13 @@ let resultado = carrito.some(producto => /* return*/ producto.nombre === 'Teclad
 
 //Reduce, ayuda a sacar la suma total del carrito. Es logico que es utilizado por numeros.
 resultado = carrito.reduce((total, producto) => total + producto.precio, 0);
+
+//Filter con precio
+resultado = carrito.filter(producto => producto.precio >800);
+
+
+//filter de un producto 
+resultado = carrito.filter(producto => producto.nombre !== 'Libro');
 console.log(resultado);
 
 
