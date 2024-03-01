@@ -6,6 +6,7 @@
 // console.log(3);
 // console.log(4);
 
+
 //con la iteraciones nos facilita las impreciones o exprarar mas en los datos facilmente y llegar hasta el objetivo que se requiere 
 //For loop
 // for(let i = 1; i <= 100; i++){
@@ -26,6 +27,17 @@ const carrito = [
     {nombre: 'Luz led', precio: 56},
 ];
 
-for(let ){
+for(let i = 0;  i < carrito.length; i++){
+    console.log(carrito[i].precio)
+}
 
+
+//while loop
+let indice = 1;
+while(indice <= 100){
+    if(indice % 2 === 0){
+        console.log(`El numero ${indice} es par`);
+    }
+
+    indice++;
 }
