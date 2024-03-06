@@ -32,12 +32,3 @@ for(let i = 0;  i < carrito.length; i++){
 }
 
 
-//while loop
-let indice = 1;
-while(indice <= 100){
-    if(indice % 2 === 0){
-        console.log(`El numero ${indice} es par`);
-    }
-
-    indice++;
-}
