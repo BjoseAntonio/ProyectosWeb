@@ -32,7 +32,6 @@ Producto.prototype.formatearProducto = function(){
     return `El producto ${this.nombre} tiene un precio de $${this.precio} mx`;
 }
 
-
 //Cliente
 function Cliente(nombre, apellido /*edad*/){
     this.nombre = nombre;
