@@ -8,6 +8,10 @@ class Producto{
         return `El producto ${this.nombre} es de un precio ${this.precio}`;
     }
 
+    obtnerPrecio(){
+        console.log(this.precio)
+    }
+
 }
 
 // herencia 
@@ -20,6 +24,11 @@ class pantallas extends Producto{ //extends: realizamos la herencia de una clase
     formatearProducto(){
         return `${super.formatearProducto()} y tiene ${this.pulgadas}" pulgadas`;//super.metodo(): Utiliza la descripción ya creada para después reasignar más descripción. 
     }
+
+    obtnerPrecio(){
+        super.obtnerPrecio();
+        console.log('Si hay en existencia');
+    }
 }
 
 const producto = new Producto('monitor', 560);
@@ -27,3 +36,4 @@ const pantalla = new pantallas('Curvo', 5600, 20);
 
 console.log(producto.formatearProducto());
 console.log(pantalla.formatearProducto());
+console.log(pantalla.obtnerPrecio());
