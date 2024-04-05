@@ -18,7 +18,16 @@ function obtenerEmpleados(){
             return resultado.json();
         })
         .then(datos => {
-            console.log(datos);
+            // console.log(datos.empleados);
+
+            const {empleados} = datos;
+
+            empleados.forEach(empleado => {
+                // console.log(empleado);
+                console.log(empleado.id);
+                console.log(empleado.nombre);
+                console.log(empleado.puesto)
+            });
         })
     // fetch('URL DE GOOGLE')
 }
