@@ -2,7 +2,7 @@
     --color-primario: #cebbb0;
     --color-Secundario: #563c15;
     --blanco: #ffff;
-    --negro: #0000;
+    --negro: #000000;
     --letra: ;
 }
 
@@ -124,4 +124,65 @@ img{
     color: var(--blanco);
     font-size: 1.8rem;
     
+}
+
+
+/* Contacto */
+.contacto-bg{
+    background-image: url(/4.-BlogCafé/img/contacto.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40rem;
+}
+
+.formulario{
+    z-index: 1;
+    background-color: var(--blanco);
+    width: 90%;
+    margin: -10rem auto 0;
+    padding: 2rem;
+    border: 2px solid var(--color-primario);
+    border-radius: 2rem;
+}
+
+.campo{
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo__label{
+    flex: 0 0 9rem;
+    text-align: right;
+    padding-right: 2rem;
+} 
+
+.campo__fiel{
+    flex: 1rem;
+    border: 1px solid var(--negro);
+    border-radius: .2rem;
+}
+
+.campo__field--textarea{
+    height: 20rem;
+}
+
+.boton{
+    text-transform: uppercase;
+    border-radius: 2rem;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    padding: 1rem auto;
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+    width: 12rem;
+    height: 5rem;
+}
+
+
+/* Footer */
+.footer{
+    background-color: var(--negro);
+    margin-top: 2rem;
 }
