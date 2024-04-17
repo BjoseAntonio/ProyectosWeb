@@ -1,2 +1,2 @@
 const elentoId2 = document.getElementById('heading');
-console.log(elentoId2)
+console.log(elentoId2);
