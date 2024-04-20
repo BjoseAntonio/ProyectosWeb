@@ -13,8 +13,7 @@ const nuevoElemento = document.createElement('A');
  const barraNav = document.querySelector('.nav');
 
 //  console.log(barraNav);
-
  barraNav.appendChild(nuevoElemento);
 
-
+ 
 // console.log(nuevoElemento);
