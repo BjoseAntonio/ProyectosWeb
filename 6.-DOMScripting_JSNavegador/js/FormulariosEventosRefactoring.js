@@ -1,3 +1,4 @@
+//Refactorización del código
 //variables
 const datos = {
     nombre:'',
@@ -27,7 +28,7 @@ formulario.addEventListener('submit', function(e){
     //validar mediante condición if 
     if( nombre ==='' || email === '' || mensaje === ''){
         // console.log('Todo los campos son obligatorios');
-        mostrarError('Todo los campos son obligatorios');
+        mostrarAlerta('-Todo los campos son obligatorios-', 'error');
 
         return; //Corta la ejecución del código, y no muestra las demas líneas de código 
     }
@@ -36,7 +37,7 @@ formulario.addEventListener('submit', function(e){
 
     //Enviar formulario 
     // console.log('Enviando mensaje');
-    mostrarValidadcion('Enviado correctamente');
+    mostrarAlerta('-Enviado correctamente-');
 })
 
 
@@ -47,16 +48,18 @@ function leerTexto(e){
 
     // console.log(datos);
 }
-//Muestra mensaje de error en pantalla
-function mostrarError(mensaje){
-    // console.log(mensaje);
-    const error = document.createElement('P');
 
-    error.textContent = mensaje;  //contenido de mensaje 
-    error.classList.add('error');//Crear su clase 
-    formulario.appendChild(error);//Añadir al documento HTML
+function mostrarAlerta(mensaje, error = null){
+    const alerta = document.createElement('P');
+    alerta.textContent = mensaje;
+    
+    if(error){
+        alerta.classList.add('error');
+    }else{
+        alerta.classList.add('validacion');
+    }
 
-    // console.log(error);
+    formulario.appendChild(alerta);
 
     //Desaparezca después de 5 seg
     setTimeout(() =>{
@@ -64,18 +67,3 @@ function mostrarError(mensaje){
     }, 5000);
 }
 
-//Muestra mensaje de validación en pantalla 
-function mostrarValidadcion(mensaje){
-     const validadcion  = document.createElement('P');
-
-     validadcion.textContent = mensaje;
-     validadcion.classList.add('validacion');
-     formulario.appendChild(validadcion);
-
-    //  console.log(validadcion);
-
-    setTimeout(() =>{
-        validadcion.remove();
-    },5000);
-
-}
