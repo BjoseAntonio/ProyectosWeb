@@ -1,0 +1,9 @@
+body {
+  background-color: red;
+  color: antiquewhite;
+  font-size: 2rem;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
