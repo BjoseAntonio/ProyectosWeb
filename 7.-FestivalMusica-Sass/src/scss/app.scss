@@ -1,12 +1,14 @@
-@use 'base/variables' as v;
-@use 'base/normalize';
-
-body{
-    background-color: v.$fondo_primario; 
-    color: v.$color_fuente_principal;
-   // <uniquifier>: Use a unique and descriptive class name
-    // <weight>: Use a value from 100 to 900
-    font-family: v.$estilo_fuente_principal;
-    font-optical-sizing: auto;
-    font-style: normal;
-}
+// @use 'base/variables' as v;// Recomendable use de @use cuando se quiera acceder a una varible 
+// @forward 'base/normalize'; //Forward cuando se quiera extraer toda la hoja del contenido 
+// // @import //Este domulo puede repetir la importacion del archivos scss en css lo cual implica duplicacion de codigo 
+@use 'base';
+@use 'layout';
+// body{
+//     background-color: v.$fondo_primario; 
+//     color: v.$color_fuente_principal;
+//    // <uniquifier>: Use a unique and descriptive class name
+//     // <weight>: Use a value from 100 to 900
+//     font-family: v.$estilo_fuente_principal;
+//     font-optical-sizing: auto;
+//     font-style: normal;
+// }
