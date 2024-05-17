@@ -1,8 +1,28 @@
-@mixin telefono{
-    @media (min-width: 768px){
-        // .contenedor{
-        //     width: 100px;
-        // }
-        @content;
-    }
+@use "variables" as v;
+
+@mixin telefono {
+  @media (min-width: v.$telefono) {
+    // .contenedor{
+    //     width: 100px;
+    // }
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: v.$tablet) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: v.$desktop) {
+    @content;
+  }
+}
+
+@mixin desktopXL {
+  @media (min-width: v.$destokXL) {
+    @content;
+  }
 }
