@@ -465,7 +465,7 @@ body > section {
   .sobre-festival {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 3rem;
+    gap: 5rem;
   }
   .sobre-festival .contenido-festival {
     margin-top: 0;
