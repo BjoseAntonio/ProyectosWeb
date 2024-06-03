@@ -546,3 +546,30 @@ body > section {
 .bg-verde li:nth-child(even) {
   background-color: #5ebfbb;
 }
+
+.contenedor-boletos {
+  background-color: #4CB8B3;
+}
+.contenedor-boletos h3 {
+  color: #FFFFFF;
+  font-weight: 700;
+}
+.contenedor-boletos .boletos {
+  width: 95%;
+  max-width: 120rem;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .contenedor-boletos .boletos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.pase .pase-nombre {
+  font-size: 3.6rem;
+  font-weight: 900;
+  text-align: center;
+  color: #FFFFFF;
+}
