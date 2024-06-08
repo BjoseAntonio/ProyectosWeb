@@ -18,6 +18,10 @@ body {
   font-family: v.$estilo_fuente_principal;
   font-optical-sizing: auto;
   font-style: normal;
+
+  &.overflow-hidden{
+    overflow: hidden;
+  }
 }
 
 p{
