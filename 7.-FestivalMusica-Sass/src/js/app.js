@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', function(){
     navegacionFija()
     crearGaleria()
+    resaltarEnlace()
 })
 
 function navegacionFija(){
@@ -79,4 +80,19 @@ function cerrarModal(){
         const body = document.querySelector('body')
         body.classList.remove('overflow-hidden')
     },500)
+}
+
+function resaltarEnlace(){
+    document.addEventListener('scroll', function(){
+        const sections = document.querySelectorAll('section')
+        const navLinks = document.querySelectorAll('.nav-principal a')
+
+        sections.forEach(section => { 
+            const sectionTop = section.offsetTop
+            const sectionHeight = section.clientHeight
+
+            if(window.scrollY >= (sectionTop - sectionHeight / 3))
+                console.log(section.id)
+        })
+   })
 }
