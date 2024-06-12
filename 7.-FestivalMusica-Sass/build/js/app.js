@@ -87,11 +87,34 @@ function resaltarEnlace(){
         const sections = document.querySelectorAll('section')
         const navLinks = document.querySelectorAll('.nav-principal a')
 
-        sections.forEach(section => { 
+        let actual = '';
+        sections.forEach(section =>{
             const sectionTop = section.offsetTop
             const sectionHeight = section.clientHeight
+            
+            if(window.scrollY >= (sectionTop - sectionHeight / 3)){
+                actual = section.id
+            }
 
-            if(window.scrollY >= )
         })
+
+        navLinks.forEach(link =>{
+            link.classList.remove('active')
+            if(link.getAttribute('href') === '#'+ actual){
+                link.classList.add('active')
+            }
+        })
+
    })
+
+}
+
+function scrollNav(){
+    const navLinks = document.querySelectorAll('.nav-principal a')
+
+    navLinks.forEach(link =>{
+        link.addEventListener('click', e =>{
+            e.preventDefault()
+        })
+    })
 }

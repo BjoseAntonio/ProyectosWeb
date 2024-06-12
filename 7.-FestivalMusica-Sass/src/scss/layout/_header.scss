@@ -43,11 +43,12 @@
     flex-direction: row;
   }
 
-  .enlace {
+  .enlace{
     color: v.$blanco;
     font-size: 2.4rem;
     // & ampersand: nos permite quitar el espacio que existe entre .enlce :hover a .enlce:hover en la hoja de estilo app.css
-    &:hover {
+    &:hover,
+    &.active{
       color: v.$amarillo;
     }
   }
