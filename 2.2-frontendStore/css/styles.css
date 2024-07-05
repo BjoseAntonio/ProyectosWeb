@@ -1,0 +1,108 @@
+:root{
+    --main-color: #6a129d;
+    --color: #ab07fb;
+    --color2: #a833ff;
+    --color3: #b688ff;
+    --color4:#e3d6ff;
+
+    --blanco:#eee0f4;
+    --negro: #2b2929;
+
+    --main-source: "Wittgenstein", serif;
+    --secondary-source: "Baskervville SC", serif;
+}
+
+html{
+    box-sizing:  border-box;
+    font-size: 62.5%; /*1rem =  10px*/
+}
+
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body{
+    background-color: var(--main-color);
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+/* Globales */
+h1{
+
+}
+
+h2{
+
+}
+
+h3{
+
+}
+
+p{
+
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+   width: 100%;
+}
+
+/* utilidades */
+.container{
+    width: 90%;
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* header */
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+    margin: 3rem 0;
+}
+
+/* Browsers */
+.browsers{
+    background-color: var(--negro);
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+    padding: 2rem 0;
+}
+
+.link{
+    color: var(--blanco);
+    font-size: 3rem;
+    font-family: var(--secondary-source);
+}
+
+/* main */
+.title__h1{
+    color: var(--color3);
+    -webkit-text-stroke: .3px var(--negro);
+    text-align: center;
+}
+
+.products{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    
+}
+
+.product{
+    background-color: var(--negro);
+}
+
+.product__img{
+    padding: 2rem;
+}
