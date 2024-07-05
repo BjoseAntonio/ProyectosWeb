@@ -5,7 +5,8 @@
     --color3: #b688ff;
     --color4:#e3d6ff;
 
-    --blanco:#eee0f4;
+    --blanco2: #eee0f4;
+    --blanco:#ffffff;
     --negro: #2b2929;
 
     --main-source: "Wittgenstein", serif;
@@ -29,19 +30,19 @@ body{
 
 /* Globales */
 h1{
-
+    font-size: 4rem;
 }
 
 h2{
-
+    font-size: 3.5rem;
 }
 
 h3{
-
+    font-size: 3rem;
 }
 
 p{
-
+    font-size: 2.4rem;
 }
 
 a{
@@ -99,10 +100,24 @@ img{
     
 }
 
+@media (min-width: 768px) {
+    .products{
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
 .product{
-    background-color: var(--negro);
+    background-color: var(--blanco);
 }
 
 .product__img{
     padding: 2rem;
 }
+
+.product__description{
+    font-size: 3rem;
+    color: var(--negro);
+    text-transform: uppercase;
+}
+
+
