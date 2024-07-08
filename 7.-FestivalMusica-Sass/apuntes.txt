@@ -1,0 +1,9 @@
+                    Introducción al performance web
+
+Minificar css y JS:
+con css => .pipe(sass({
+            outputStyle: 'compressed' <==
+        }).on('error', sass.logError))
+    JS: Terminal ==> npm i --save-dev gulp-terser
+        import terser from 'gulp-terser'
+        .pipe(terser())

@@ -47,6 +47,7 @@ function mostrarImagen(i){
     imagen.src = `src/img/gallery/full/${i}.jpg`
     imagen.alt = 'Imagen Galería'
     imagen.classList.add('modal-img')
+    
 
     //Generar modal 
     const modal = document.createElement('DIV')
