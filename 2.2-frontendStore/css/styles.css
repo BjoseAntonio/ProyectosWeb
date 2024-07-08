@@ -191,7 +191,7 @@ img {
     .img--size{
         width: auto;
     }
-}
+} 
 
 /* buy us */
 .services{
@@ -209,7 +209,7 @@ img {
 
 
 
-.purchase__fund {
+.purchase__fund img {
   background-color: var(--negro);
   -webkit-box-shadow: 10px 6px 3px 1px rgba(0, 0, 0, 0.28);
   -moz-box-shadow: 10px 6px 3px 1px rgba(0, 0, 0, 0.28);
