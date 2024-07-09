@@ -7,3 +7,8 @@ con css => .pipe(sass({
     JS: Terminal ==> npm i --save-dev gulp-terser
         import terser from 'gulp-terser'
         .pipe(terser())
+
+
+                Lazy loading
+Nos sirve para no mostrar todas las imagenes inecesarias en el momento de la actualizacion de la pagina. 
+    se añade la propiedad de (height="200" width="300" loading="lazy") en el elemento de IMG. 

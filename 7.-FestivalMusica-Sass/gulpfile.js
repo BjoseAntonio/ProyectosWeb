@@ -25,6 +25,27 @@ export function css(done){
     done()
 }
 
+
+// Proceso de crear versiones mas pequeñas de las imagenes con Sharp 
+export async function crop(done){
+    const inputFolder = 'src/img/gallery/full'
+    const outputFolder = 'src/img/gallery/thumb'
+    const width = 250
+    const height = 180;
+    if(!fs.existsSync(outputFolder)){
+        fs.mkdirSync(outputFolder, {recursive: true})
+    }
+    const images = fs.readdirSync(inputFolder).filter(file => {
+        return /\.(jpg)$/i.test(path.extname(file));
+    });
+    try{
+        images.forEach(file => {
+            cons
+            
+        });
+    }
+}
+
 export function dev(){
     // watch('src/scss/app.scss', css)
     watch('src/scss/**/*.scss', css) //Deteción de cambios en todas las carpetas de scss
