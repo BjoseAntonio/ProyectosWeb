@@ -42,12 +42,17 @@
 
     <section class="sobre-festival">
         <div class="imagen">
-            <img height="200" width="300" loading="lazy" src="src/img/imagen_dj.jpg" alt="Sobre Festival" />
+            <picture>
+                <source srcset="build/img/imagen_dj.avif" type="image/avif">
+                <source srcset="build/img/imagen_dj.webp" type="image/webp">
+            
+                <img height="200" width="300" loading="lazy" src="build/img/imagen_dj.jpg" alt="Sobre Festival" />
+            </picture>
         </div>
 
         <div class="contenido-festival">
             <h2>Techno & EDM Festival</h2>
-            <p class="fecha">julio 2028, CDMX, México</p>
+            <p class="fecha">julio 2028, CDMX, México</p> 
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem voluptatibus a fugiat quos obcaecati. Aspernatur adipisci quasi ad, nisi esse expedita accusantium atque voluptatem quam, eveniet ipsa, taque ipsum laboriosam.</p>
         </div>
     </section>
